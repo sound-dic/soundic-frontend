@@ -40,21 +40,25 @@ function App() {
 }
 
 const AuthContainer = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  box-shadow: 0 0 20px 10px;
+  box-shadow: 0 0 10px 3px;
   border-radius: 3px;
 `;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
   /*background: rgba(0, 0, 0, 0.6);*/
   box-sizing: border-box;
+  overflow: auto;
 `;
 
 const ButtonWrapper = styled.div`
@@ -73,7 +77,7 @@ const Button = styled.button`
   font-weight: bold;
   border-radius: 28px;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(218, 218, 218);
+
   cursor: pointer;
 `;
 
